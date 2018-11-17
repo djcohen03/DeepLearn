@@ -89,9 +89,9 @@ if __name__ == '__main__':
 
     # Test Some Handmade (low-quality) Samples:
     sampledata = np.array([
-        Helpers.importimage('./numbers/seven.png'),
-        Helpers.importimage('./numbers/three.png'),
-        Helpers.importimage('./numbers/two.png'),
+        Helpers.importimage('./img/seven.png'),
+        Helpers.importimage('./img/three.png'),
+        Helpers.importimage('./img/two.png'),
     ])
     sampledata = sampledata.reshape(len(sampledata), 28 * 28).astype('float32') / 255.
     samplelabels = [7, 3, 2]

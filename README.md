@@ -1,6 +1,11 @@
-https://www.manning.com/books/deep-learning-with-python
+# Deep Learning with Python
 
-Sample problems
+These are examples taken and adapted from François Chollet's book
+[Deep Learning With Python](https://www.manning.com/books/deep-learning-with-python)!
+
+
+![alt text](https://raw.githubusercontent.com/djcohen03/DeepLearn/master/img/deeplearn.png)
+
 
 ## Installation
 Keras and Tensorflow can be heavy installations, so it is sometimes smart to
@@ -27,6 +32,6 @@ Run with:
  python imdb.py
  ```
 
-![alt text](https://raw.githubusercontent.com/djcohen03/DeepLearn/master/numbers/two.png)
-![alt text](https://raw.githubusercontent.com/djcohen03/DeepLearn/master/numbers/three.png)
-![alt text](https://raw.githubusercontent.com/djcohen03/DeepLearn/master/numbers/seven.png)
+![alt text](https://raw.githubusercontent.com/djcohen03/DeepLearn/master/img/two.png)
+![alt text](https://raw.githubusercontent.com/djcohen03/DeepLearn/master/img/three.png)
+![alt text](https://raw.githubusercontent.com/djcohen03/DeepLearn/master/img/seven.png)
