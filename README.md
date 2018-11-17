@@ -4,7 +4,7 @@ These are examples taken and adapted from François Chollet's book
 [Deep Learning With Python](https://www.manning.com/books/deep-learning-with-python)!
 
 
-![alt text](https://raw.githubusercontent.com/djcohen03/DeepLearn/master/img/deeplearn.png)
+![alt text](https://raw.githubusercontent.com/djcohen03/DeepLearn/master/img/deeplearn.jpg)
 
 
 ## Installation
@@ -17,7 +17,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Run AI Trainer:
+## Training & Testing Deep Network Examples:
 ### IMDB Movie Review Classification (Binary):
 Run  with:
 
