@@ -107,19 +107,20 @@ if __name__ == '__main__':
 
     # MARK: Graph Validation Set Performance:
     print("Graphing Learning Performance:")
-    Graph.epochs(metadata)
+    Graph.metadata(metadata)
 
 
 
     # MARK: Testing Predictions from Training Data:
     print("IMDB Samples:")
     count = 10
-    tests = np.random.choice(testdata, size=count)
+    testindicies = random.sample(range(len(testdata)), k=count)
+    tests = testdata[testindicies]
     vectorized_tests = Methods.vectorize(tests)
     predictions = network.predict(vectorized_tests)
     for i in range(count):
         prediction = Methods.ergprediction(predictions[i])
-        expected = Methods.ergprediction(testlabels[i])
+        expected = Methods.ergprediction(testlabels[testindicies[i]])
         words = Methods.decode(tests[i])
         print("Predicted: %s\tActual: %s\tSample: %s" % (
             prediction,

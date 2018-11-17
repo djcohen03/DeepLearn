@@ -3,7 +3,11 @@ import matplotlib.pyplot as plt
 
 class Graph(object):
     @classmethod
-    def epochs(cls, metadata):
+    def metadata(cls, metadata):
+        ''' Graph the Training Progress vs Validation Loss/Accuraccy in the
+            training set and validation set
+        '''
+
         history = metadata.history
         loss = history.get('loss')
         val_loss = history.get('val_loss')
@@ -19,4 +23,15 @@ class Graph(object):
         plt.plot(epochs, acc, 'bo', label="Training Accuracy")
         plt.plot(epochs, val_acc, 'b', label="Validation Accuracy")
         plt.legend()
+        plt.show()
+
+    @classmethod
+    def digit(cls, data):
+        ''' Plot a 28 by 28 pixel (grayscale) image
+        '''
+        if data.shape == (28 * 28, ):
+            datacopy = data.copy().reshape((28, 28))
+            plt.imshow(datacopy, cmap=plt.cm.binary)
+        else:
+            plt.imshow(data, cmap=plt.cm.binary)
         plt.show()
