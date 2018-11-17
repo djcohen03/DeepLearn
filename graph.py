@@ -29,7 +29,7 @@ class Graph(object):
     def digit(cls, data):
         ''' Plot a 28 by 28 pixel (grayscale) image
         '''
-        if data.shape == (28 * 28, ):
+        if data.shape == (28 * 28,):
             datacopy = data.copy().reshape((28, 28))
             plt.imshow(datacopy, cmap=plt.cm.binary)
         else:
