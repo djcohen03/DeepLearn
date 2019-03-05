@@ -29,7 +29,7 @@ python imdb.py
 Run with:
 
  ```
- python imdb.py
+ python mnist.py
  ```
 
 ![alt text](https://raw.githubusercontent.com/djcohen03/DeepLearn/master/img/two.png)
